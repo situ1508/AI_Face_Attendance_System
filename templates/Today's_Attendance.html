@@ -1,0 +1,30 @@
+<div class="row mt-4">
+
+    <div class="col-md-6">
+
+        <div class="card bg-white text-dark">
+
+            <h4>📅 Today's Attendance</h4>
+            <hr>
+
+            <table class="table table-hover">
+
+                <tr>
+                    <th>Name</th>
+                    <th>Time</th>
+                </tr>
+
+                {% for record in today_records %}
+
+                <tr>
+                    <td>{{ record[0] }}</td>
+                    <td>{{ record[1] }}</td>
+                </tr>
+
+                {% endfor %}
+
+            </table>
+
+        </div>
+
+    </div>

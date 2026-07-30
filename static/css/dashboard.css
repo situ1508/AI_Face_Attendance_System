@@ -1,0 +1,517 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* ===========================
+   BODY
+=========================== */
+
+body{
+    background:#081120;
+    color:#fff;
+}
+
+/* ===========================
+   SIDEBAR
+=========================== */
+
+.sidebar{
+
+    position:fixed;
+    left:0;
+    top:0;
+
+    width:260px;
+    height:100vh;
+
+    background:linear-gradient(180deg,#071426,#0B1D36,#123C74);
+
+    padding:25px;
+
+    box-shadow:5px 0 20px rgba(0,0,0,.45);
+
+}
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    margin-bottom:45px;
+
+}
+
+.logo i{
+
+    font-size:32px;
+    color:#4DA3FF;
+
+}
+
+.logo h2{
+
+    font-size:24px;
+    font-weight:600;
+
+}
+
+.sidebar ul{
+
+    list-style:none;
+
+}
+
+.sidebar ul li{
+
+    margin:12px 0;
+
+}
+
+.sidebar ul li a{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+    color:#D8E7FF;
+
+    text-decoration:none;
+
+    padding:15px 18px;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+}
+
+.sidebar ul li a:hover{
+
+    background:#2563EB;
+
+    transform:translateX(6px);
+
+}
+
+.sidebar ul li a.active{
+
+    background:#2563EB;
+
+}
+
+.sidebar i{
+
+    width:20px;
+
+}
+
+/* ===========================
+   MAIN CONTENT
+=========================== */
+
+.main-content{
+
+    margin-left:260px;
+
+    padding:35px;
+
+}
+
+/* ===========================
+   TOPBAR
+=========================== */
+
+
+.topbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:30px;
+
+}
+
+.topbar h2{
+
+    font-size:32px;
+
+    font-weight:700;
+
+}
+
+.topbar p{
+
+    color:#9CAFCB;
+
+}
+
+.top-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:25px;
+
+}
+
+.notification{
+
+    font-size:22px;
+
+    cursor:pointer;
+
+}
+
+.admin{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.admin img{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+}
+
+/* ===========================
+   STAT CARDS
+=========================== */
+
+.stat-card{
+
+    border-radius:20px;
+
+    padding:25px;
+
+    color:white;
+
+    transition:.35s;
+
+    cursor:pointer;
+
+    box-shadow:0 15px 25px rgba(0,0,0,.35);
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.stat-card i{
+
+    font-size:36px;
+
+    margin-bottom:15px;
+
+}
+
+.stat-card h2{
+
+    font-size:36px;
+
+    font-weight:700;
+
+}
+
+.stat-card p{
+
+    margin-top:8px;
+
+    font-size:16px;
+
+}
+
+/* Card Colors */
+
+.blue{
+    background:linear-gradient(135deg,#2563EB,#1E40AF);
+}
+
+.green{
+    background:linear-gradient(135deg,#059669,#10B981);
+}
+
+.orange{
+    background:linear-gradient(135deg,#F59E0B,#EA580C);
+}
+
+.purple{
+    background:linear-gradient(135deg,#7C3AED,#4F46E5);
+}
+/* ==========================================
+   PANELS
+========================================== */
+
+.panel{
+
+    background:#101C2E;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+
+    margin-bottom:25px;
+
+    border:1px solid rgba(255,255,255,.05);
+
+}
+
+.panel-title{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+}
+
+.panel-title h4{
+
+    color:white;
+
+    font-size:22px;
+
+    font-weight:600;
+
+}
+
+.panel-title i{
+
+    color:#3B82F6;
+
+    margin-right:8px;
+
+}
+
+/* ==========================================
+   CHART AREA
+========================================== */
+
+.chart-area{
+
+    height:320px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:15px;
+
+    background:#0D1727;
+
+}
+
+/* ==========================================
+   QUICK ACTIONS
+========================================== */
+
+.quick-actions{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.action-btn{
+
+    text-decoration:none;
+
+    color:white;
+
+    padding:16px;
+
+    border-radius:14px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    font-size:17px;
+
+    transition:.35s;
+
+    font-weight:500;
+
+}
+
+.action-btn i{
+
+    font-size:22px;
+
+}
+
+.action-btn:hover{
+
+    transform:translateX(8px);
+
+    color:white;
+
+}
+
+.blue-btn{
+
+    background:linear-gradient(135deg,#2563EB,#1D4ED8);
+
+}
+
+.green-btn{
+
+    background:linear-gradient(135deg,#059669,#10B981);
+
+}
+
+.orange-btn{
+
+    background:linear-gradient(135deg,#F59E0B,#EA580C);
+
+}
+
+.purple-btn{
+
+    background:linear-gradient(135deg,#7C3AED,#4F46E5);
+
+}
+/* ===========================
+   TABLE
+=========================== */
+
+.table{
+
+    margin-bottom:0;
+
+}
+
+.table-dark{
+
+    --bs-table-bg:#101C2E;
+
+    --bs-table-hover-bg:#16253D;
+
+}
+
+.table th{
+
+    color:#60A5FA;
+
+    font-weight:600;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.table td{
+
+    color:white;
+
+    vertical-align:middle;
+
+    border-bottom:1px solid rgba(255,255,255,.05);
+
+}
+
+.badge{
+
+    padding:8px 14px;
+
+    font-size:13px;
+
+    border-radius:20px;
+
+}
+.btn.rounded-circle{
+    width:42px;
+    height:42px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:.3s;
+}
+
+.btn.rounded-circle:hover{
+    transform:scale(1.12);
+    box-shadow:0 0 15px rgba(37,99,235,.45);
+}
+.student-photo{
+
+    width:50px;
+
+    height:50px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:3px solid #2563EB;
+
+}
+/* Attendance Table */
+
+.table{
+    background: #101C2E !important;
+    color: white !important;
+}
+
+.table tbody{
+    background: #101C2E !important;
+}
+
+.table tbody tr{
+    background: #101C2E !important;
+}
+
+.table tbody td{
+    color: white !important;
+    background: #101C2E !important;
+    border-color: rgba(255,255,255,.08);
+}
+
+.table thead th{
+    background: #1A2D4A !important;
+    color: #60A5FA !important;
+}
+
+.table-hover tbody tr:hover{
+    background: #16253D !important;
+}
+#attendanceChart{
+    max-width:260px;
+    max-height:260px;
+    margin:auto;
+}
